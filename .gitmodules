@@ -1,0 +1,6 @@
+[submodule "ref/libgsm"]
+	path = ref/libgsm
+	url = https://github.com/wave-owl/libgsm.git
+[submodule "ref/svxlink"]
+	path = ref/svxlink
+	url = https://github.com/wave-owl/svxlink.git

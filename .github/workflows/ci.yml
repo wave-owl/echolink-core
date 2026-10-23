@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: src/gsm pin check (libgsm 1.0.24, unmodified)
+        run: make check-gsm
+      - name: Build
+        run: make
+      - name: Test (API, fuzz, goldens)
+        run: make test
+      - name: Test (ASan + UBSan)
+        run: make sanitize
+      - name: Benchmark
+        run: make bench
+
+  reference:
+    # The goldens are written by the reference implementations; this job proves it again:
+    # unmodified libgsm 1.0.24 and svxlink 26.05.2 rtpacket.cpp give the same bytes.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Reference check
+        run: make ref

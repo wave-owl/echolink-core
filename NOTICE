@@ -1,0 +1,29 @@
+echolink-core -- third-party notices
+====================================
+
+1. libgsm 1.0.24 -- GSM 06.10 codec (src/gsm/, vendored unmodified; gsm.lock)
+   https://www.quut.com/gsm/gsm-1.0.24.tar.gz
+   sha256 a3c40c6471928383f4abfcb2e8f24012a1f562be2f17b8d672145d5986681a92
+   mirror https://github.com/wave-owl/libgsm (tag gsm-1.0.24, submodule ref/libgsm)
+
+   The licence is src/gsm/COPYRIGHT (Jutta Degener and Carsten Bormann, Technische
+   Universitaet Berlin): any use is permitted provided that the notice is not removed and
+   the authors are not deemed to have made representations as to suitability. It is
+   reproduced unchanged in src/gsm/COPYRIGHT.
+
+2. svxlink 26.05.2 echolib -- EchoLink packet code (ported in src/elk_packets.c and
+   src/elk_codec.c; the reference harness tools/ref/ compiles rtpacket.cpp unmodified)
+   https://github.com/sm0svx/svxlink, commit 595cf9bb3325be753d05b219bdd39feab6a22b33
+   (tag 26.05.2), mirror https://github.com/wave-owl/svxlink (submodule ref/svxlink)
+
+   EchoLib - A library for EchoLink communication
+   Copyright (C) 2003-2026 Tobias Blomberg / SM0SVX
+   This program is free software; you can redistribute it and/or modify it under the
+   terms of the GNU General Public License as published by the Free Software Foundation;
+   either version 2 of the License, or (at your option) any later version.
+
+   rtpacket.cpp derives from the RTP routines of "Speak Freely" by John Walker (public
+   domain).
+
+echolink-core as a whole is distributed under the GNU General Public License version 3 or
+later (LICENSE), which svxlink's "version 2 or later" permits and libgsm's notice allows.
