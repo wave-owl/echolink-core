@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Build libgsm's unmodified files without `-Werror`: GCC flags `-Wsign-compare` in
+  `private.h` (`GSM_ADD`, `GSM_SUB`); clang does not. No change in output (goldens unchanged).
+
 ## 0.1.0
 
 - GSM 06.10 full-rate codec: libgsm 1.0.24 vendored unmodified under `src/gsm/`

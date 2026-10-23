@@ -20,7 +20,7 @@ stays in the Python package of Wave Owl, as do sockets, timers and the connectio
 machine. The core has no sockets, no threads and no global state.
 
 Contract `echolink-c1`, ABI 1, capability `tx=1` (encoder and packet builders). Version
-string: `echolink-core 0.1.0 contract=echolink-c1 abi=1 tx=1 gsm=1.0.24 svxlink=26.05.2`.
+string: `echolink-core 0.1.1 contract=echolink-c1 abi=1 tx=1 gsm=1.0.24 svxlink=26.05.2`.
 
 ## Build and test
 
@@ -33,7 +33,7 @@ make bench      # CPU per second of speech
 make ref        # the reference implementations write the vectors again; byte-identical?
 ```
 
-Plain make, C99, `-Wall -Wextra -Werror -pedantic` (libgsm's files with three warnings of
+Plain make, C99, `-Wall -Wextra -Werror -pedantic` (libgsm's unmodified files without `-Werror` and with three warnings of
 their 1990s style switched off), no dependencies besides libc. `make ref` needs a C++
 compiler and the submodules `ref/libgsm` and `ref/svxlink`; `REF_LIBGSM=` and `REF_SVXLINK=`
 point it at other checkouts.

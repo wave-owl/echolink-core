@@ -14,7 +14,7 @@
 
 #include "gsm/gsm.h"
 
-#define ELK_CORE_VERSION "0.1.0"
+#define ELK_CORE_VERSION "0.1.1"
 
 struct elk_gsm {
     gsm g;

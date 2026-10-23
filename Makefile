@@ -18,8 +18,9 @@ REF_SVXLINK ?= ref/svxlink
 
 CORE_FLAGS = -std=c99 -Wall -Wextra -Werror -pedantic -fPIC -fvisibility=hidden -Iinclude
 # libgsm's own build defines (its Makefile: SASR, WAV49, prototypes; assertions on). The
-# vendored files are unmodified; two warnings of their 1990s style are switched off.
-GSM_FLAGS = -std=c99 -Wall -Wextra -Werror -pedantic -Wno-comment -Wno-unused-parameter -Wno-unused-const-variable \
+# vendored files are unmodified; they are compiled without -Werror (compilers differ in what
+# they flag in 1990s C), three style warnings are switched off.
+GSM_FLAGS = -std=c99 -Wall -Wextra -pedantic -Wno-comment -Wno-unused-parameter -Wno-unused-const-variable \
             -fPIC -fvisibility=hidden -DSASR -DWAV49 -DNeedFunctionPrototypes=1 -Isrc/gsm
 TEST_FLAGS = -std=c99 -Wall -Wextra -Werror -pedantic -Iinclude
 
