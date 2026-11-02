@@ -107,7 +107,7 @@ None.
 | src/elk_packets.c | 595cf9bb3325be753d05b219bdd39feab6a22b33 | declared-vendored-source | unresolved; manual review required |
 | src/elk_codec.c | 595cf9bb3325be753d05b219bdd39feab6a22b33 | declared-vendored-source | unresolved; manual review required |
 | actions/checkout | v4 | Syft source/package discovery | unresolved |
-| /Users/gerolfziegenhain/src/wave-owl/local/sbom-core-preflight-v2/echolink-core/.source-input/.github/workflows/ci.yml | unresolved | Syft source/package discovery | unresolved |
+| tracked-source/.github/workflows/ci.yml | unresolved | Syft source/package discovery | unresolved |
 
 License evidence paths/hashes, source manifests, model hashes and conditional
 CMake declarations are recorded in SBOM.cdx.json. Declared upstream pins do not
