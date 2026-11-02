@@ -1,0 +1,59 @@
+{
+  "gitlinks": {
+    "ref/libgsm": {
+      "repository": "wave-owl/libgsm",
+      "licenses": [
+        "COPYRIGHT"
+      ],
+      "role": "reference-only"
+    },
+    "ref/svxlink": {
+      "repository": "wave-owl/svxlink",
+      "licenses": [
+        "COPYRIGHT"
+      ],
+      "role": "reference-only"
+    }
+  },
+  "vendored": [
+    {
+      "path": "src/gsm",
+      "repository": "wave-owl/libgsm",
+      "commit": "b77cd90d77c50ba62ad321cf0ebc2ad9deb75a17",
+      "licenses": [
+        "src/gsm/COPYRIGHT"
+      ],
+      "evidence": [
+        "README.md",
+        "NOTICE"
+      ]
+    },
+    {
+      "path": "src/elk_packets.c",
+      "repository": "wave-owl/svxlink",
+      "commit": "595cf9bb3325be753d05b219bdd39feab6a22b33",
+      "licenses": [
+        "NOTICE"
+      ],
+      "evidence": [
+        "README.md",
+        "NOTICE"
+      ]
+    },
+    {
+      "path": "src/elk_codec.c",
+      "repository": "wave-owl/svxlink",
+      "commit": "595cf9bb3325be753d05b219bdd39feab6a22b33",
+      "licenses": [
+        "NOTICE"
+      ],
+      "evidence": [
+        "README.md",
+        "NOTICE"
+      ]
+    }
+  ],
+  "references": [],
+  "models": [],
+  "external_libraries": []
+}

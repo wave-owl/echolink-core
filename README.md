@@ -71,3 +71,12 @@ each direction (`make bench`).
 
 GPL-3.0-or-later (`LICENSE`); `src/gsm/` keeps libgsm's own notice (`src/gsm/COPYRIGHT`).
 See `NOTICE`.
+
+<!-- wave-owl-source-sbom-docs:start -->
+## Source SBOMs
+
+Every published release, including prereleases, receives automatically generated
+CycloneDX JSON and readable documentation. See the [initial source report](SBOM.md),
+[CycloneDX JSON](SBOM.cdx.json) and [release policy](SBOM-POLICY.md) for scope,
+release assets, provenance declarations and reproduction instructions.
+<!-- wave-owl-source-sbom-docs:end -->
